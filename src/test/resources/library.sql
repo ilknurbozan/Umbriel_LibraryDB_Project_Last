@@ -29,3 +29,12 @@ select bc.name, count(*) from book_borrow bb inner join books b on b.id = bb.boo
 inner join book_categories bc on b.book_category_id = bc.id
 group by bc.name
 order by count(*) desc ;
+
+-- US05
+
+select bc.name,count(*) as total_book_count from book_borrow bb
+                       inner join books b on bb.book_id = b.id
+                        inner join book_categories bc on b.book_category_id = bc.id
+                group by bc.name
+                order by total_book_count desc;
+
