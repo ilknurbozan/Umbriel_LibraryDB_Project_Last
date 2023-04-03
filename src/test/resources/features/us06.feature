@@ -16,6 +16,6 @@ Feature: Books module
     Then verify "The book has been created." message is displayed
     And verify "<Book Name>" information must match with DB
     Examples:
-      | Book Name              | ISBN     | Year | Author    | Book Category |
-      | Greatest Batch         | 01102023 | 2023 | Anonymous | Fable         |
-      | We are strong together | 01102023 | 2023 | B28       | Classic       |
+      | Book Name          | ISBN     | Year | Author    | Book Category |
+      | Journey of Atlas 4 | 07142123 | 2023 | Anonymous | Fable         |
+      | Hasan Ertas 1      | 01102023 | 2023 | B28       | Classic       |
